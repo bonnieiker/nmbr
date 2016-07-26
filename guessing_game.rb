@@ -1,6 +1,6 @@
-
-
-def computer_number
+number = rand(1...100)
+# max num_guesses = 5
+num_guesses = 0
 
 
 
@@ -8,14 +8,9 @@ def computer_number
 
 
 loop do
-
-
-
-
-rand 100
 Puts "Please guess a number between 1 and 100:"
-  input = gets.chomp
-
+  input = gets.chomp to_i
+  num_guesses += 1
 
   if input >= computer number
     puts "Too low, please guess again"
